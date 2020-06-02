@@ -1,0 +1,10 @@
+[
+	{"keys":["ctrl+`"], "command": "tag_classes"},
+	{"keys": ["ctrl+s"], "command": "build","context": [
+    {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "source.scss"
+    }
+  ] }
+]
