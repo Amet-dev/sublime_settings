@@ -1,0 +1,78 @@
+//user-pref-----------------------------------------
+{
+	"color_scheme": "Monokai.sublime-color-scheme",
+	"font_size": 12,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"AutoFileName",
+		"Vintage"
+	],
+	"margin": 0,
+	"remeber_open_files": true,
+	"tab_size": 3,
+	"theme": "Adaptive.sublime-theme",
+	"trim_trailling_white_space_on_save": false,
+	"word_wrap": true,
+	"show_encoding": true,
+	"font_face": "default"
+}
+//key-bindings-----------------------------------------
+[
+	{"keys":["ctrl+`"], "command": "tag_classes"},
+	{"keys": ["ctrl+s"], "command": "build","context": [
+    {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "source.scss"
+    }
+  ] }
+]
+
+//libsas-build-----------------------------------------
+{
+    "output": {
+        "dir": "build\\css",      // Relative or absolute path (can have ..)
+        "structure": "nested"       // "flat", "nested", or ["nested", "relative/root/of/nest"]
+    },
+    "compile": {
+        "style": false,             // String | Output style: nested/expanded/compact/compressed
+        "line-numbers": false,      // Bool   | Emit comments showing original line numbers
+        "line-comments": false,     // Bool   | Alias for line-numbers, does not override
+        "load-path": false,         // List   | Sass import paths: e.g. [ "C:\bourbon", "C:\compass" ]
+        "plugin-path": false,       // String | Path to autoload plugins (libsass issue 878)
+        "sourcemap": false,         // Bool   | Emit .css.map file for debugging in browser
+        "omit-map-comment": false,  // Bool   | Omit comment about .css.map file in .css file
+        "precision": false          // Int    | Decimal places for computed values
+    }
+}
+//ememet-kyebind-----------------------------------------
+[
+	{"keys":["ctrl+`"], "command": "tag_classes"},
+	{"keys": ["ctrl+s"], "command": "build","context": [
+    {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "source.scss"
+    }
+  ] }
+]
+
+//libsas-build-settings-----------------------------------------
+{
+    "output": {
+        "dir": "../css",               // Relative or absolute path (can have ..)
+        "structure": "nested"       // "flat", "nested", or ["nested", "relative/root/of/nest"]
+    },
+    "compile": {
+       "style": "compact",         // String | Output style: nested/expanded/compact/compressed
+        "line-numbers": false,      // Bool   | Emit comments showing original line numbers
+        "line-comments": false,     // Bool   | Alias for line-numbers, does not override
+        "load-path": false,         // List   | Sass import paths: e.g. [ "C:\bourbon", "C:\compass" ]
+        "plugin-path": false,       // String | Path to autoload plugins (libsass issue 878)
+        "sourcemap": false,         // Bool   | Emit .css.map file for debugging in browser
+        "omit-map-comment": false,  // Bool   | Omit comment about .css.map file in .css file
+        "precision": false          // Int    | Decimal places for computed values     
+    }
+}
+//libsas-build-settings-----------------------------------------
